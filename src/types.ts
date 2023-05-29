@@ -21,4 +21,11 @@ interface Restaurant {
     cuisine: string;
 }
 
-export type { Place, Product, Restaurant }
+interface Coupon {
+    _id: string;
+    promoName: string;
+    promocode: string;
+    discount: number;
+}
+
+export type { Place, Product, Restaurant, Coupon }

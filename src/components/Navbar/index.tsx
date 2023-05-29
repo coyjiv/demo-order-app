@@ -17,7 +17,7 @@ export const Navbar = (props: Props) => {
           </li>
           <li>
             <NavLink href={'cart'} className='text-lg font-medium'>
-              Shop
+              Cart
             </NavLink>
           </li>
           <li>

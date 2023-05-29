@@ -1,10 +1,18 @@
+import { Product as IProduct } from '@/types'
 import React from 'react'
+import Product from './Product'
 
-type Props = {}
+type Props = {
+  products: IProduct[]
+}
 
-const ProductsWrapper = (props: Props) => {
+const ProductsWrapper = ({products}: Props) => {
   return (
-    <div>ProductsWrapper</div>
+    <div className='grid p-3 grid-cols-5 w-full gap-3 justify-items-center'>
+      {products.map((product) => (
+        <Product key={product.id} product={product} />
+      ))}
+    </div>
   )
 }
 
